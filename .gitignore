@@ -1,2 +1,8 @@
 .DS_Store
 *.pyc
+*~
+extra
+ex.py
+warmup.py
+mine.py
+tom.py
