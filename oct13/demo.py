@@ -43,16 +43,22 @@ def start():
     for row in reader:
         sheet.append(row)
 
+    grid = []
+    for r in range(len(sheet)):
+        grid.append([])
+        for c in range(len(sheet[0])):
+            grid[-1].append(sheet[r][c])
+
 #    for r in range(len(sheet)):
 #        print(sheet[r][0])
 #    print (average(sheet, 4))
 
 #    print(sheet)
-    result = zip(sheet[3], sheet[4][:-3])
-    listA, listB = unzip(result)
+#    result = zip(sheet[3], sheet[4][:-3])
+#    listA, listB = unzip(result)
     
-    print(listA)
-    print(listB)
+#    print(listA)
+#    print(listB)
     
 if __name__ == "__main__":
     start()
