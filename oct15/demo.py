@@ -10,7 +10,7 @@ def make2D(rows, cols, bounds = (1, 11)):
         for c in range(cols):
             result[-1].append(random.randrange(lower, upper))
     
-    return result
+    return result[1:]
 
 def printGrid(grid):
     for row in grid:
